@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding-top: 50px;
+  padding-left: 100px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* * {
+  margin: 0;
+} */
+
+p.paragraph {
+  color: green;
+}
+
+.test-list li {
+  margin-bottom: 10px;
+  height: 40px;
+  background-color: aquamarine;
+}
+
+/* .block .item {
+  color: orchid;
+} */
+
+/* div > section > p {
+  color: blue;
+} */
+
+/* .block + .item {
+  color: red;
+} */
+
+.block ~ .item {
+  color: red;
+}
+
+/* .list li {
+  list-style: none;
+}
+
+.list li::before {
+  content: url('../assets/dot.png');
+  margin-right: 10px;
+} */
+
+h2::first-letter {
+  font-size: 40px;
+}
+
+/* .heading-wrapper h2:nth-child(3n - 1) {
+  color: red;
+} */
+
+.list {
+  list-style: none;
+}
+
+.list li::after {
+  content: '*';
+}
+
+/* .link:hover {
+  color: red;
+}
+
+.link:visited {
+  color: blue;
+}
+
+.link:focus {
+  color: yellowgreen;
+  outline: 0;
+  background-color: black;
+}
+
+.link:first-of-type {
+  color: red;
+} */
+
+.checkbox-label {
+  display: block;
+  width: 400px;
+  height: 40px;
+}
+
+.checkbox-label:nth-child(odd) {
+  background-color: bisque;
+}
+
+.checkbox-label:nth-child(even) {
+  background-color: aquamarine;
+}
+
+.checkbox-field:checked + span {
+  text-decoration: line-through;
+  color: #9b96ac;
+}
+
+/* input[type='checkbox']:checked + span {
+  text-decoration: line-through;
+} */
+
+button:disabled {
+  background-color: beige;
+}
+
+.link:active {
+  color: red;
+}
+
+/* .textfield::placeholder {
+  color: green;
+  opacity: 0.5;
+  font-size: 18px;
+} */
+
+input[type='text']::placeholder {
+  color: green;
+  opacity: 0.5;
+  font-size: 18px;
+}
