@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: antiquewhite;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.main-container {
+  width: 793px;
+  height: 507px;
+  margin: 100px auto;
+  background-color: #3b3f45;
+}
+
+.header-container {
+  height: 82px;
+  padding: 19px 0 12px;
+  background-color: #4a4f56;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.title,
+.subtitle {
+  color: #ff8984;
+}
+
+.shopping-list {
+  width: 534px;
+  margin: 20px auto 45px;
+}
+
+.shopping-list-item {
+  display: block;
+  padding: 11px 0 13px 12px;
+  background-color: #88839e;
+  cursor: pointer;
+}
+
+.shopping-list-item:nth-child(even) {
+  background-color: #7a7593;
+}
+
+.shopping-list-item:hover {
+  background-color: #625e77;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.shopping-list-item:active {
+  background-color: #ff8984;
+}
+
+input[type='checkbox']:checked + span {
+  text-decoration: line-through;
+}
+
+.bon-apetit {
+  width: 534px;
+  margin: 0 auto;
+  padding: 12px 0;
+  background-color: #4a4f56;
+  text-align: center;
+  color: #ff8984;
+}
+
+.hidden {
+  display: none;
+}
+
+.bon-apetit:hover + .hidden {
+  display: block;
+}
