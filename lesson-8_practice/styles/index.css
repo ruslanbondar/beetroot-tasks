@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  height: 200vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.page-header {
+  height: 60px;
+  background-color: burlywood;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+}
+
+.page-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.page-header ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.page-header ul li a {
+  text-decoration: none;
+  color: brown;
+}
+
+.main-title {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.container {
+  width: 800px;
+  margin: 200px auto;
+}
+
+.item {
+  width: 200px;
+  height: 400px;
+  margin-left: 50px;
+  display: inline-block;
+  background-color: cadetblue;
+}
+
+.child-item {
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+  position: sticky;
+}
+
+.child-item:hover {
+  transform: scaleY(3);
+  transition: ease-in-out 1s;
+}
+
+.child-item-1 {
+  top: 60px;
+  background-color: blue;
+}
+
+.child-item-2 {
+  top: 160px;
+  background-color: green;
+}
+
+.child-item-3 {
+  top: 260px;
+  background-color: red;
+}
+
+.rotated-block {
+  width: 440px;
+  height: 280px;
+  background-image: url('../assets/Shopify-dark.jpg');
+}
+
+.rotated-block:hover {
+  transform: rotateX(360deg);
+  transition: ease-in-out 1s;
+  background-image: url('../assets/Shopify-light.jpg');
+}
