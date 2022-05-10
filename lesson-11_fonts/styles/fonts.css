@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+@font-face {
+  font-family: 'RoundedMplus1x-Bold';
+  src: url('../fonts/RoundedMplus1x-Bold.ttf') format('truetype');
+}
+/* @font-face {
+  font-family: 'RoundedMplus1c-Light';
+  src: url('../fonts/RoundedMplus1c-Light.ttf') format('truetype');
+} */
+
+.test {
+  color: red;
+}

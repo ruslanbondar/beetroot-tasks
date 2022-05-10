@@ -1,0 +1,56 @@
+.phone-icon {
+  width: 200px;
+  height: 200px;
+}
+
+.phone-icon path {
+  fill: red;
+}
+
+.flag {
+  width: 200px;
+  height: 200px;
+}
+
+.phone-icon-2 {
+  width: 200px;
+  height: 200px;
+}
+
+.phone-icon-3 {
+  width: 200px;
+  height: 200px;
+  background-image: url('../icons/phone.svg');
+}
+
+.sprite-svg {
+  fill: red;
+}
+
+.sprite-svg-phone {
+  fill: red;
+}
+.sprite-svg-phone:hover {
+  fill: green;
+}
+
+.line {
+  width: 400px;
+  height: 400px;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 40px;
+}
+
+.rounded-square {
+  width: 200px;
+  height: 200px;
+}
+
+.test {
+  width: 200px;
+  height: 200px;
+}
