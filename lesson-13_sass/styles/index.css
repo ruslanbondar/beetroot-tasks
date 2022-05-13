@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&family=Roboto:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 50px;
+}
+
+.text {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.text--small {
+  font-size: 20px;
+  color: #ffd166;
+}
+.text--small:hover {
+  color: red;
+}
+
+.block-2, .block-1 {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+.block-2:hover, .block-1:hover {
+  transform: rotate(45deg);
+  border-width: 2px;
+  background-color: brown;
+}
+
+.block-1 {
+  border-color: #ffd166;
+}
+
+.block-2 {
+  border-color: red;
+  margin-top: 100px;
+}
+
+.class {
+  color: white;
+}
+
+.block-3 {
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
+}
+.block-3:hover {
+  transform: translateX(70px);
+  border-width: 2px;
+  background-color: brown;
+}
+
+/*# sourceMappingURL=index.css.map */

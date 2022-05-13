@@ -1,0 +1,5 @@
+@mixin transform($property1, $property2) {
+  transform: $property1;
+  border-width: 2px;
+  background-color: $property2;
+}
