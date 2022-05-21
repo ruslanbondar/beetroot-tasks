@@ -1,0 +1,90 @@
+.parent-block {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: burlywood;
+}
+
+.child-block {
+  width: 250px;
+  height: 250px;
+  background-color: brown;
+  /* transition: transform 1s 2s cubic-bezier(0.7, 0.04, 0.66, 1.71),
+    background-color 1s 1s; */
+  /* transition-property: transform;
+  transition-duration: 1s;
+  transition-delay: 2s;
+  transition-timing-function: ease-in; */
+  animation: left-to-right 1.5s ease-in forwards 3 alternate 2s;
+  /* animation: loop 2.5s ease-in forwards infinite 1s; */
+}
+
+.parent-block:hover .child-block {
+  /* background-color: blueviolet; */
+  transform: translateX(100%) rotate(180deg);
+  /* animation-name: left-to-right; */
+  /* animation-fill-mode: forwards; */
+  /* animation-iteration-count: 3; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+  /* animation-delay: 2s; */
+  /* animation-play-state: paused; */
+  /* animation-duration: ; */
+}
+
+.inner-child {
+  width: 50%;
+  height: 50%;
+  background-color: greenyellow;
+  transition: transform 1s ease-in;
+}
+
+/* .child-block:hover .inner-child {
+  transform: translateX(100%);
+} */
+
+@keyframes left-to-right {
+  0% {
+    transform: translateX(0);
+    background-color: brown;
+  }
+
+  33% {
+    transform: translateY(100%);
+  }
+
+  /* 50% {
+    background-color: blue;
+  } */
+
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+    background-color: blueviolet;
+  }
+}
+
+@keyframes loop {
+  0% {
+    transform: translate(0);
+  }
+
+  25% {
+    transform: translateY(100%) rotate(90deg);
+  }
+
+  50% {
+    transform: translateX(100%) translateY(100%) rotate(180deg);
+  }
+
+  75% {
+    transform: translateX(100%) translateY(0) rotate(270deg);
+  }
+
+  100% {
+    transform: translate(0) rotate(360deg);
+  }
+}

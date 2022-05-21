@@ -1,0 +1,46 @@
+.container {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 200px 200px;
+  gap: 10px;
+}
+
+.item {
+  border: 1px solid black;
+}
+
+.item-1 {
+  background-color: blue;
+}
+
+.item-2 {
+  background-color: red;
+  /* transition: 3s ease-in-out; */
+}
+
+.item-2:hover {
+  grid-column: 2 / 1;
+  grid-row: 2 / 1;
+  /* transform: translateX(-100%); */
+}
+
+.item-3 {
+  background-color: green;
+}
+
+.item-3:hover {
+  grid-column: 2 / 1;
+  grid-row: 2 / 1;
+}
+
+.item-4 {
+  background-color: yellow;
+}
+
+.item-4:hover {
+  grid-column: 2 / 1;
+  grid-row: 2 / 1;
+}
