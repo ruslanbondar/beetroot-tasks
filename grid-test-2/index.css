@@ -4,6 +4,8 @@
     'header header header header'
     'sidebar section section section'
     'footer footer footer footer';
+  /* grid-auto-rows: minmax(100px, auto); */
+  grid-template-rows: 200px 200px 200px;
   gap: 20px;
 }
 
@@ -19,7 +21,7 @@
 
 .sidebar {
   grid-area: sidebar;
-  align-self: start;
+  /* align-self: start; */
 }
 
 .section {

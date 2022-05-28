@@ -1,0 +1,76 @@
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-item {
+  width: 230px;
+  height: 350px;
+  background-image: url('./assets/card-back.jpeg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: card-rotate forwards infinite;
+}
+
+.card-item:hover {
+  animation-play-state: paused;
+}
+
+.card-item-1 {
+  animation-duration: 0.5s;
+  animation-delay: 8s;
+}
+.card-item-2 {
+  animation-duration: 2s;
+  animation-delay: 10s;
+}
+.card-item-3 {
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+}
+.card-item-4 {
+  animation-duration: 0.5s;
+  animation-delay: 9s;
+}
+.card-item-5 {
+  animation-duration: 1.5s;
+  animation-delay: 3s;
+}
+.card-item-6 {
+  animation-duration: 0.5s;
+  animation-delay: 6s;
+}
+.card-item-7 {
+  animation-duration: 0.5s;
+  animation-delay: 5s;
+}
+.card-item-8 {
+  animation-duration: 1.5s;
+  animation-delay: 4s;
+}
+.card-item-9 {
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+.card-item-10 {
+  animation-duration: 3s;
+  animation-delay: 7s;
+}
+
+@keyframes card-rotate {
+  0% {
+    transform: rotateY(180deg);
+  }
+
+  50% {
+    transform: rotateY(360deg);
+    background-image: url('./assets/card.png');
+  }
+
+  100% {
+    transform: rotateY(180deg);
+    background-image: url('./assets/card-back.jpeg');
+  }
+}
