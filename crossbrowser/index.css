@@ -1,0 +1,42 @@
+.block {
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: azure;
+  border: 1px solid black;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  scrollbar-color: red green;
+  scrollbar-width: thin;
+}
+.block::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 10px;
+}
+.block::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: lightcoral;
+}
+.block::-webkit-scrollbar-thumb:active, .block::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+.block::-webkit-scrollbar-track {
+  margin: 20px 0;
+  background: lightblue;
+  border-radius: 10px;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  h1 {
+    color: green;
+  }
+}
+@supports (-moz-appearance: none) {
+  h1 {
+    color: red;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,59 @@
+.block {
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: azure;
+  border: 1px solid black;
+  overflow-y: scroll;
+  box-sizing: border-box;
+
+  scrollbar-color: red green;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: lightcoral;
+  }
+
+  &::-webkit-scrollbar-thumb:active,
+  &::-webkit-scrollbar-thumb:hover {
+    background: red;
+  }
+
+  &::-webkit-scrollbar-track {
+    margin: 20px 0;
+    background: lightblue;
+    border-radius: 10px;
+  }
+}
+
+// @-moz-document url-prefix() {
+//   h1 {
+//     color: red;
+//   }
+// }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  h1 {
+    color: green;
+  }
+}
+
+@supports (-moz-appearance: none) {
+  h1 {
+    color: red;
+  }
+}
+
+// @supports (-webkit-appearance: none) {
+//   h1 {
+//     color: green;
+//   }
+// }
