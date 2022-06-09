@@ -47,17 +47,15 @@
 // };
 // let test2 = (param1, param2) => param1 + param2;
 
-let value1 = +prompt('number 1');
-let value2 = +prompt('number 2');
-function add(a, b) {
-  return a + b;
-}
+// function add(a, b) {
+//   return a + b;
+// }
 
-let value3 = +prompt('number 3');
-function getResult(sum, num) {
-  let result = sum(value1, value2);
+// let value3 = +prompt('number 3');
+// function getResult(sum, num) {
+//   let result = sum(value1, value2);
 
-  console.log(result + num);
-}
+//   console.log(result + num);
+// }
 
-getResult(add, value3);
+// getResult(add, value3);
