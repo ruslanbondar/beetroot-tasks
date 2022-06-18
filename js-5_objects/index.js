@@ -131,6 +131,8 @@
 // const newHuman = Object.defineProperty(human, 'firstName', {
 //   value: 'Ivan',
 //   writable: false,
+//   configurable: false,
+//   enumerable: true
 // });
 
 // newHuman.firstName = 'John';
@@ -169,3 +171,60 @@
 
 // delete human.firstName;
 // console.log(human);
+
+// test();
+// test2();
+
+// function test() {
+//   console.log('hello 1');
+// }
+
+// const test2 = function() {
+//   console.log('hello 2');
+// }
+
+// console.log(a);
+// var a = 5;
+// console.log(a);
+
+const obj = {
+  firstName: 'Paul',
+  age: 40,
+  cash: {
+    uah: 100,
+    usd: 50,
+  },
+};
+
+let {
+  firstName,
+  age,
+  cash: { uah, usd },
+} = obj;
+// const testUah = obj.cash.uah;
+// console.log(firstName);
+// console.log(uah);
+// uah = 10;
+// obj.cash.uah = 20;
+// console.log(uah);
+// console.log(obj);
+
+const arr = [1, 2, 5];
+const [a, b, c] = arr;
+console.log(a);
+console.log(b);
+console.log(c);
+
+function getMobile(manufacturer, model, year) {
+  // return {
+  //   manufacturer: manufacturer,
+  //   model: model,
+  //   year: year,
+  // };
+  return {
+    manufacturer,
+    model,
+    year,
+  };
+}
+getMobile('Samsung', 'Galaxy', '2020');

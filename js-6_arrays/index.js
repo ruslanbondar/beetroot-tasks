@@ -150,3 +150,78 @@
 
 // за допомогою методу concat
 // const arr3 = arr1.concat(arr2);
+
+// const shopList = [
+//   {
+//     productName: 'milk',
+//     productAmount: 2,
+//     buyStatus: 'notBuy',
+//     price: 35,
+//     summ() {
+//       return this.price * this.productAmount;
+//     },
+//   },
+//   {
+//     productName: 'eggs',
+//     productAmount: 20,
+//     buyStatus: 'notBuy',
+//     price: 1,
+//     summ() {
+//       return this.price * this.productAmount;
+//     },
+//   },
+//   {
+//     productName: 'meat',
+//     productAmount: 2,
+//     buyStatus: 'notBuy',
+//     price: 130,
+//     summ() {
+//       return this.price * this.productAmount;
+//     },
+//   },
+//   {
+//     productName: 'tomatoes',
+//     productAmount: 1,
+//     buyStatus: 'buy',
+//     price: 50,
+//     summ() {
+//       return this.price * this.productAmount;
+//     },
+//   },
+//   {
+//     productName: 'water',
+//     productAmount: 2,
+//     buyStatus: 'notBuy',
+//     price: 12,
+//     summ() {
+//       return this.price * this.productAmount;
+//     },
+//   },
+//   {
+//     productName: 'sugar',
+//     productAmount: 2,
+//     buyStatus: 'buy',
+//     price: 30,
+//     summ() {
+//       return this.price * this.productAmount;
+//     },
+//   },
+//   {
+//     productName: 'rice',
+//     productAmount: 1,
+//     buyStatus: 'buy',
+//     price: 40,
+//     summ() {
+//       return this.price * this.productAmount;
+//     },
+//   },
+// ];
+
+// const calcTotal = (amount, price) => amount * price;
+
+// shopList.map((item) => console.log(calcTotal(item.productAmount, item.price)));
+
+// const notBuyItems = shopList.filter((item) => item.buyStatus === 'notBuy');
+// const notBuyTotal = notBuyItems.reduce((acc, item) => acc + item.summ(), 0);
+// console.log(notBuyItems);
+// console.log(notBuyTotal);
