@@ -194,32 +194,32 @@
 
 // ************************************
 
-class User {
-  constructor(firstName, lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
+// class User {
+//   constructor(firstName, lastName) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//   }
 
-  getFullName() {
-    return `${this.firstName} ${this.lastName}`;
-  }
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   }
 
-  get fullName() {
-    return `${this.firstName} ${this.lastName}`;
-  }
+//   get fullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   }
 
-  set fullName(fullName) {
-    [this.firstName, this.lastName] = fullName.split(' ');
-  }
-}
+//   set fullName(fullName) {
+//     [this.firstName, this.lastName] = fullName.split(' ');
+//   }
+// }
 
-const user = new User('John', 'Doe');
-console.log(user);
-console.log(user.lastName);
-console.log(user.fullName);
+// const user = new User('John', 'Doe');
+// console.log(user);
+// console.log(user.lastName);
+// console.log(user.fullName);
 
-const user2 = new User('Boris', 'Johnson');
-console.log(user2);
+// const user2 = new User('Boris', 'Johnson');
+// console.log(user2);
 
 // user.fullName = 'Ruslan Bondar';
 // console.log(user.firstName);
@@ -243,4 +243,23 @@ class Car {
 }
 
 const audi = new Car('Audi', '2015', 'green');
+const audiGrey = { ...audi, color: 'grey' };
+console.log(audiGrey);
 console.log(audi);
+audi.getInfo();
+
+class MilitaryCar extends Car {
+  constructor(model, year, color, machineGun) {
+    super(model, year, color);
+    this.machineGun = machineGun;
+  }
+
+  getInfo() {
+    super.getInfo();
+    console.log(`Car is equiped with ${this.machineGun}`);
+  }
+}
+
+const toyota = new MilitaryCar('Toyota', '2010', 'black', 'M60');
+console.log(toyota);
+toyota.getInfo();

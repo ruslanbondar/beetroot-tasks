@@ -5,6 +5,8 @@ const products = [
   { title: 'tomato', amount: 3, isBought: false, price: 9, sum: 27 },
 ];
 
+const total = products.reduce((acc, item) => acc + item.sum, 0);
+
 const boughtProducts = products.filter((item) => item.isBought);
 const notBoughtProducts = products.filter((item) => !item.isBought);
 const reorderedProductList = [...notBoughtProducts, ...boughtProducts];
@@ -26,8 +28,6 @@ const removeProduct = (productName) => {
   return products.filter((item) => item.title !== productName);
 };
 console.log(removeProduct('bread'));
-
-
 
 let newProductList;
 const addProduct = (title) => {
@@ -54,3 +54,14 @@ const addProduct = (title) => {
 };
 
 console.log(addProduct('egg'));
+
+function sortProducts(param) {
+  if (param === 'minToMax') {
+    return products.sort((a, b) => a.sum - b.sum);
+  }
+  if (param === 'maxToMin') {
+    return products.sort((a, b) => b.sum - a.sum);
+  }
+}
+
+sortProducts('minToMax');
