@@ -1,0 +1,15 @@
+.password-label {
+  position: relative;
+}
+
+.password-button {
+  position: absolute;
+  top: 23px;
+  right: 5px;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.hide-button {
+  display: none;
+}
