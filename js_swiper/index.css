@@ -1,0 +1,22 @@
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+.swiper-button-prev {
+  content: url(./assets/left-arrow.svg);
+  position: absolute;
+  top: 140px;
+  left: 0;
+}
+
+.swiper-button-next {
+  content: url(./assets/right-arrow.svg);
+  position: absolute;
+  top: 140px;
+  right: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: red;
+}

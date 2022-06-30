@@ -1,0 +1,49 @@
+body {
+  background-color: aquamarine;
+}
+
+.slick-container {
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  height: 300px;
+  background-color: burlywood;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.slick-prev:before {
+  content: url(./assets/left-arrow.svg);
+  color: red;
+}
+
+.slick-next:before {
+  content: url(./assets/right-arrow.svg);
+  color: red;
+}
+
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 0px;
+  border: 0;
+}
+
+.slick-dots li button::before {
+  display: none;
+}
+
+.slick-dots .slick-active button {
+  background-color: blue;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
