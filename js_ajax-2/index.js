@@ -1,4 +1,5 @@
-const url = 'http://localhost:5001';
+// const url = 'http://localhost:5001';
+const url = 'https://beetroot-todo-app.herokuapp.com';
 
 const todoInput = document.getElementById('todo-input');
 const addButton = document.getElementById('add-button');
